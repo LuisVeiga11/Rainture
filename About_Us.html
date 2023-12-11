@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rainture</title>
+        <link href="https://fonts.googleapis.com/css2?family=Boogaloo&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" type="image/png" href="IMAGENS/Favicon.png">
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="bgimg_1 opacity_min"></div>
+			<nav id="menu">
+				<a href="Index.html">Home</a>
+				<a href="Gallery.html">Gallery</a>
+				<a href="Portfolio.html">Portfolio</a>
+				<a href="About_Us.html">About Us</a>
+				<a href="Contacts.html">Contacts</a>
+				<div class="animation about_us"></div>
+			</nav>
+        <div class="container" id="About_Jorge">
+			<h3 class="center">Jorge Miguel Ferreira Pontes</h3><br>       
+        	<p class="justify content">Tenho 18 anos, estudei no curso de Ciências e Tecnologias e agora,entrei como aluno do 1º ano na Universidade de Trás-os-Montes e Alto Douro, no curso de Comunicação e Multimédia. Escolhi este curso entre vários pois sempre tive uma afinidade a computadores e a várias àreas mais abstratas como animação, desenvolvimento de jogos, edição de vídeos ou imagens o que se enquadrava no âmbito da multimédia. Sou um dos desenvolvedores deste mesmo website, criado no âmbito da disciplina de Introdução ao Desenvolvimento Web. Espero que consigam apreciar este site com o mesmo gosto e carinho que tivémos a desenvolve-lo, e espero também que gostem das fotografias especificamente por mim tiradas.</p>
+		</div>
+		<div class="bgimg_3"></div>
+		<div class="dark_container" id="About_Bruno">
+			<h3 class="center">Bruno João Carilho Afonso</h3><br>       
+        	<p class="justify content">Olá, eu sou o Bruno Afonso. Estudei Línguas e Humanidades e decidi continuar a estudar, vi o curso de Comunicação e Multimédia e aqui estou a estudar na Mui Nobre Universidade de Trás-Os-Montes e Alto Douro, Licenciatura em Comunicação e Multimédia. No âmbito da U.C Introdução ao Desenvolvimento Web, fui um dos desenvolvedores deste website. O nosso objetivo é demonstrar a maneira de como a fotografia nos afetou ao longo deste tempo, visto que, não eramos apreciadores dela até há um tempo atrás. Espero que gostem do website desenvolvido, das fotografias que foram tiradas com muita precisão e com isto agradecia que seguissem a minha rede social, <a style="color: white" href="https://www.instagram.com/brunoafonsophotography21/" target="_blank" title="Insta_Fotografia_Bruno">@brunoafonsophotography21</a>, visto que estão por vir novidades escaldantes.</p>
+		</div>
+		<div class="bgimg_4"></div>
+		
+		<div class="container" id="About_Luis">
+			<h3 class="center">Luís Manuel Soares Veiga</h3><br>       
+        	<p class="justify content">Luís Veiga,19 anos e venho de Sabrosa do curso profissional técnico de Multimédia. Agora, sou aluno do 1º ano na Universidade de Trás-os-Montes e Alto Douro (UTAD), no curso de Comunicação e Multimédia e vim para este curso expandir horizontes aprendendo mais a fundo os meus estudos anteriores. Eu ajudei na confeção deste website junto dos meus colegas de turma, no âmbito da disciplina de Introdução ao Desenvolvimento Web. Espero que gostem do design do website que criamos e também da nossa galeria que será cada vez mais preenchida com as nossas fotografias tiradas ao longo do tempo.</p>
+		</div>
+		<div class="bgimg_5"></div>
+		
+       	<div class="dark_container">
+			<h4 class="center">Introdução ao Desenvolvimento Web<br>Comunicação e Multimédia</h4>
+        	<p class="center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3813.8490216863584!2d-7.740723708503629!3d41.28832487709614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd3b4a4363ebebdb%3A0x4ad99a4df30ab35!2sUniversidade%20de%20Tr%C3%A1s-os-Montes%20e%20Alto%20Douro!5e1!3m2!1spt-PT!2spt!4v1642872936763!5m2!1spt-PT!2spt" width="850" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe></p>
+			<p style="font-size:11px" class="center">Powered by CM Guys<br>(2021)</p>
+		</div>
+        <script>
+			window.onscroll = function() {sticky()};
+			function sticky() {
+			  var header = document.getElementById("menu");
+			  var sticky = header.offsetTop;
+			  if (window.pageYOffset > sticky) {
+				header.classList.add("sticky");
+			  } else {
+				header.classList.remove("sticky");
+			  }
+			}
+		</script>
+    </body>
+</html>

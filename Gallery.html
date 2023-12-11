@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rainture</title>
+        <link href="https://fonts.googleapis.com/css2?family=Boogaloo&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" type="image/png" href="IMAGENS/Favicon.png">
+        <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+	<style>		
+		nav {
+			position: fixed;
+			top: 0;
+			width: 1000px;
+		 	padding-top: 60px;
+		}
+	</style>
+    <body>
+			<nav id="menu">
+				<a href="Index.html">Home</a>
+				<a href="Gallery.html">Gallery</a>
+				<a href="Portfolio.html">Portfolio</a>
+				<a href="About_Us.html">About Us</a>
+				<a href="Contacts.html">Contacts</a>
+				<div class="animation gallery"></div>
+			</nav>
+		<!-- Slideshow container -->
+		<div class="slideshow-container">
+
+		  <!-- Full-width images -->
+		  <div class="slides fade">
+			<img src="Imagens/01.jpg" style="width:100%">
+		  </div>
+
+		  <div class="slides fade">
+			<img src="Imagens/02.jpg" style="width:50%;height:50%">
+		  </div>
+
+		  <div class="slides fade">
+			<img src="Imagens/03.png" style="width:100%">
+		  </div>
+			
+		  <div class="slides fade">
+			<img src="Imagens/04.png" style="width:100%">
+		  </div>
+
+		  <div class="slides fade">
+			<img src="Imagens/05.png" style="width:50%;height:50%">
+		  </div>
+
+		  <div class="slides fade">
+			<img src="Imagens/06.jpg" style="width:100%">
+		  </div>
+		  
+		  <div class="slides fade">
+			<img src="Imagens/07.png" style="width:43%;height:50%">
+		  </div>
+
+		  <div class="slides fade">
+			<img src="Imagens/08.png" style="width:50%;height:50%">
+		  </div>
+
+		  <div class="slides fade">
+			<img src="Imagens/09.png" style="width:50%;height:50%">
+		  </div>
+			
+		  <div class="slides fade">
+			<img src="Imagens/10.jpg" style="width:100%">
+		  </div>
+
+		  <div class="slides fade">
+			<img src="Imagens/11.jpg" style="width:100%">
+		  </div>
+			
+		  <div class="slides fade">
+			<img src="Imagens/12.jpg" style="width:50%;height:50%">
+		  </div>
+
+		  <div class="slides fade">
+			<img src="Imagens/13.jpg" style="width:50%;height:50%">
+		  </div>
+			
+		  <div class="slides fade">
+			<img src="Imagens/14.jpg" style="width:50%;height:50%">
+		  </div>
+
+		  <div class="slides fade">
+			<img src="Imagens/15.jpg" style="width:100%">
+		  </div>
+		
+		  <div class="slides fade">
+			<img src="Imagens/16.jpg" style="width:100%">
+		  </div>
+
+		  <!-- Next and previous buttons -->
+		  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+			
+		  <!-- The dots/circles -->
+		  <div style="text-align:center">
+			  <span class="dot" onclick="currentSlide(1)"></span>
+			  <span class="dot" onclick="currentSlide(2)"></span>
+			  <span class="dot" onclick="currentSlide(3)"></span>
+			  <span class="dot" onclick="currentSlide(4)"></span>
+			  <span class="dot" onclick="currentSlide(5)"></span>
+			  <span class="dot" onclick="currentSlide(6)"></span>
+			  <span class="dot" onclick="currentSlide(7)"></span>
+			  <span class="dot" onclick="currentSlide(8)"></span>
+			  <span class="dot" onclick="currentSlide(9)"></span>
+			  <span class="dot" onclick="currentSlide(10)"></span>
+			  <span class="dot" onclick="currentSlide(11)"></span>
+			  <span class="dot" onclick="currentSlide(12)"></span>
+			  <span class="dot" onclick="currentSlide(13)"></span>
+			  <span class="dot" onclick="currentSlide(14)"></span>
+			  <span class="dot" onclick="currentSlide(15)"></span>
+			  <span class="dot" onclick="currentSlide(16)"></span>
+		  </div>
+		</div>
+		
+		<script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("slides");
+		  var dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+			  slides[i].style.display = "none";  
+		  }
+		  for (i = 0; i < dots.length; i++) {
+			  dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " active";
+		}
+	</script>
+    </body> 
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Rainture</title>
+		<link href="https://fonts.googleapis.com/css2?family=Boogaloo&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" type="image/png" href="IMAGENS/Favicon.png">
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="bgimg_1 opacity_min"></div>
+			<nav id="menu">
+				<a href="Trabalho_Final.html">Home</a>
+				<a href="Gallery.html">Gallery</a>
+				<a href="Portfolio.html">Portfolio</a>
+				<a href="About_Us.html">About Us</a>
+				<a href="Contacts.html">Contacts</a>
+				<div class="animation home"></div>
+			</nav>
+		<div class="container">
+			<h3 class="center">A Galeria de Imagens de que Estavas à Espera!!</h3><br>       
+        	<p class="justify content">Um fervor que arde em cada um dos nossos peitos cheios de inspiração. Aqui no <i><b>RAINTURE</b></i> é onde vamos depositar toda este recém descoberto entusiasmo por fotografia e programação. Com a divulgação das nossas mais belas imagens e estruturadas no mais incrível site de html por nós projetado. Por favor acompanhem-nos nesta nova jornada investigando mais sobre o nosso site nas outras <i><b>abas</b></i>, <i><b>na barra de navegação</b></i>.</p>
+		</div>
+		<div class="bgimg_2 opacity_max"></div>
+		<div class="dark_container">
+			<h3 class="center">Cheia de Todos os Tipos de Imagens que Imagines!!</h3><br>     
+        	<p class="justify content">Vais poder encontrar todos os tipos de imagens, desde os animais mais fofos, até às paisagens mais deslumbrantes. Sem qualquer tipo de copyright podes usar as nossas imagens como quiseres, apenas oferencendo os devidos créditos ao nosso website.</p>
+		</div>
+        <script>
+			window.onscroll = function() {sticky()};
+			function sticky() {
+			  var header = document.getElementById("menu");
+			  var sticky = header.offsetTop;
+			  if (window.pageYOffset > sticky) {
+				header.classList.add("sticky");
+			  } else {
+				header.classList.remove("sticky");
+			  }
+			}
+		</script>
+</body>
+</html>

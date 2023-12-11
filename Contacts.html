@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rainture</title>
+        <link href="https://fonts.googleapis.com/css2?family=Boogaloo&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" type="image/png" href="IMAGENS/Favicon.png">
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="bgimg_1 opacity_min"></div>
+			<nav id="menu">
+				<a href="Index.html">Home</a>
+				<a href="Gallery.html">Gallery</a>
+				<a href="Portfolio.html">Portfolio</a>
+				<a href="About_Us.html">About Us</a>
+				<a href="Contacts.html">Contacts</a>
+				<div class="animation contacts"></div>
+			</nav>
+   <div class="container">
+		<div class="linha center">
+			<div class="coluna"><img src="Imagens/Jorge_perfil.png" title="Jorge"><br>
+				<a href="About_Us.html#About_Jorge"><p class="center">About Me</p></a>
+				<a href="https://www.instagram.com/jorge_pontes_/" target="_blank" class="fa fa-instagram"></a>
+				<a href="mailto:jorgemiguelfpont.com" class="fa fa-google"></a>
+			</div>
+			<div class="coluna"><img src="Imagens/Bruno_perfil.png" title="Bruno"><br>
+				<a href="About_Us.html#About_Bruno"><p class="center">About Me</p></a>
+				<a href="https://www.instagram.com/bruno_afonso21/" target="_blank" class="fa fa-instagram"></a>
+				<a href="mailto:brunoafonsophotography21@gmail.com" class="fa fa-google"></a>
+			</div>
+			<div class="coluna"><img src="Imagens/Luis_perfil.png" title="Luís"><br>
+				<a href="About_Us.html#About_Luis"><p class="center">About Me</p></a>
+				<a href="https://www.instagram.com/l_veiga11/" target="_blank" class="fa fa-instagram"></a>
+				<a href="mailto:luis.veiga10d@gmail.com" class="fa fa-google"></a>
+			</div>
+		</div>
+	</div>
+        <script>
+			window.onscroll = function() {sticky()};
+			function sticky() {
+			  var header = document.getElementById("menu");
+			  var sticky = header.offsetTop;
+			  if (window.pageYOffset > sticky) {
+				header.classList.add("sticky");
+			  } else {
+				header.classList.remove("sticky");
+			  }
+			}
+		</script>
+    </body>
+</html>
